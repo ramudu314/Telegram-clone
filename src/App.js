@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import ChatList from './components/ChatList';
+import ChatWindow from './components/ChatWindow';
 import './App.css';
 
 function App() {
+  const [selectedChat, setSelectedChat] = useState(null);
+  const [darkMode, setDarkMode] = useState(false); // State for dark mode
+
+  // Function to toggle dark mode
+  const toggleDarkMode = () => {
+    setDarkMode(prevMode => !prevMode);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`app ${darkMode ? 'dark-mode' : ''}`}>
+      <div className="chat-list-container">
+        <ChatList onSelectChat={setSelectedChat} toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+      </div>
+      <div className="chat-window-container">
+        {selectedChat ? (
+          <ChatWindow selectedChat={selectedChat} darkMode={darkMode} />
+        ) : (
+          <div className="no-chat-selected">Select a chat to start messaging</div>
+        )}
+      </div>
     </div>
   );
 }

@@ -1,0 +1,54 @@
+/* ChatList.css */
+
+/* Default styles */
+.chat-list {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.chats {
+  padding: 20px;
+}
+
+.drawer-content {
+  width: 350px;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* .toolbar {
+  background-color: #1976d2;
+} */
+
+/* Dark mode styles */
+.chat-list.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+
+.dark-mode .drawer-content .MuiListItem-root {
+  border-bottom: 1px solid #555;
+}
+
+.dark-mode .drawer-content .MuiListItem-root:last-child {
+  border-bottom: none;
+}
+
+.dark-mode .drawer-content .MuiListItemText-primary {
+  color: #ddd; /* Dark mode primary text color */
+
+
+ .dark-mode .drawer-content .MuiListItemText-secondary {
+  color: #bbb; /* Dark mode secondary text color*/
+ }
+
+.dark-mode .drawer-content button,
+.dark-mode .drawer-content .MuiIconButton-root {
+  color: #fff; /* Dark mode button and icon button text color */ } 
+}
+
+

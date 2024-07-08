@@ -1,0 +1,50 @@
+/* Message.css */
+
+/* Default styles */
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  color: #333; /* Default text color */
+}
+
+.message.sent {
+  align-items: flex-end;
+}
+
+.message-content {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 70%;
+  position: relative;
+}
+
+.message.sent .message-content {
+  background-color: #d1e7ff;
+}
+
+.message-time {
+  font-size: 0.8em;
+  color: #888;
+  margin-top: 5px;
+  text-align: right;
+}
+
+/* Dark mode styles */
+.dark-mode .message {
+  color: #fff; /* Text color for dark mode */
+}
+
+.dark-mode .message-content {
+  background-color: #424242; /* Dark mode background color */
+}
+
+.dark-mode .message.sent .message-content {
+  background-color: #424242; /* Dark mode sent message background color */
+}
+
+.dark-mode .message-time {
+  color: #bbb; /* Dark mode text color for timestamp */
+}
