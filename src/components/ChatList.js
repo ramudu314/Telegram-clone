@@ -53,10 +53,10 @@ function ChatList({ onSelectChat, toggleDarkMode, darkMode }) {
             <MenuIcon />
           </IconButton>
           <div style={{ flex: 1 }}>
-            <h2 style={{ textAlign: 'center', color: darkMode ? '#fff' : '#333' }}>Telegram</h2>
+            <h2 style={{ textAlign: 'center', color: darkMode ? '#fff' : '#fff' }}>Telegram</h2>
           </div>
           <IconButton edge="end" color="inherit" onClick={() => {}}>
-            <SearchIcon style={{ color: darkMode ? '#fff' : '#333' }} />
+            <SearchIcon style={{ color: darkMode ? '#fff' : '#fff' }} />
           </IconButton>
         </Toolbar>
       </AppBar>

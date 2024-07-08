@@ -1,4 +1,4 @@
-# Chat Application
+# Telegram-Clone 
 
 This project implements a chat application where users can view and send messages in different chat conversations. It utilizes React for the frontend and Axios for handling API requests.
 
@@ -16,6 +16,7 @@ Axios
 HTML/CSS
 
 # Hosted link
+[https://telegram-clone-livid.vercel.app/]
 
 
 
