@@ -1,3 +1,27 @@
+# Chat Application
+
+This project implements a chat application where users can view and send messages in different chat conversations. It utilizes React for the frontend and Axios for handling API requests.
+
+# Features
+
+View a list of chat conversations.
+Click on a chat to view messages in that conversation.
+Send messages in each chat conversation.
+Supports dark and light themes.
+
+# Technologies Used
+
+React.js
+Axios
+HTML/CSS
+
+# Hosted link
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
